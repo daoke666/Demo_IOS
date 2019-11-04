@@ -20,6 +20,10 @@
     
     [self.window setBackgroundColor:[UIColor whiteColor]];
     
+    
+    /* ************************************************** */
+    
+    /*
     //根视图
     ViewController * rootView = [[ViewController alloc]init];
     
@@ -27,7 +31,33 @@
     UINavigationController * nav = [[UINavigationController alloc]initWithRootViewController:rootView];
     
     self.window.rootViewController = nav;
+    */
     
+    /* ************************************************* */
+    
+    
+    
+    //创建Tab导航条控制器
+    UITabBarController *tabControl = [[UITabBarController alloc] init];
+    
+    //将Tab导航条控制器设为window根控制器
+    self.window.rootViewController = tabControl;
+    
+    UIViewController *vc1 = [[UIViewController alloc] init];
+    vc1.view.backgroundColor = [UIColor redColor];
+    vc1.tabBarItem.title = @"首页";
+    vc1.tabBarItem.image = [UIImage imageNamed:@"tab_home_icon"];
+    
+    
+    UIViewController *vc2 = [[UIViewController alloc] init];
+    vc2.view.backgroundColor = [UIColor blueColor];
+    vc2.tabBarItem.title = @"我的";
+    vc1.tabBarItem.image = [UIImage imageNamed:@"tab_my_icon"];
+    
+    //将UIViewController加入Tab控制器中(类似Activity管理Fragment)
+    tabControl.viewControllers = @[vc1, vc2];
+    
+    //显示window
     [self.window makeKeyAndVisible];
     
 }
