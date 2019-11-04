@@ -1,5 +1,7 @@
 #import "SceneDelegate.h"
 #import "ViewController.h"
+#import "SecondViewController.h"
+#import "TableViewViewController.h"
 
 @interface SceneDelegate ()
 
@@ -15,6 +17,7 @@
     
     UIWindowScene *windowScene = (UIWindowScene *)scene;
     
+    //创建window
     self.window = [[UIWindow alloc] initWithWindowScene:windowScene];
     self.window.frame = windowScene.coordinateSpace.bounds;
     
@@ -23,20 +26,23 @@
     
     /* ************************************************** */
     
-    /*
+
     //根视图
-    ViewController * rootView = [[ViewController alloc]init];
+    //ViewController * rootView = [[ViewController alloc]init];
+    TableViewViewController * rootView = [[TableViewViewController alloc]init];
     
     //根控制器
     UINavigationController * nav = [[UINavigationController alloc]initWithRootViewController:rootView];
     
     self.window.rootViewController = nav;
-    */
+
     
     /* ************************************************* */
     
     
+    /* ************************************************* */
     
+    /*
     //创建Tab导航条控制器
     UITabBarController *tabControl = [[UITabBarController alloc] init];
     
@@ -56,6 +62,10 @@
     
     //将UIViewController加入Tab控制器中(类似Activity管理Fragment)
     tabControl.viewControllers = @[vc1, vc2];
+    */
+     
+    /* ************************************************* */
+    
     
     //显示window
     [self.window makeKeyAndVisible];
