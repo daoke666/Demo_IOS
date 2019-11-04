@@ -20,7 +20,13 @@
     
     [self.window setBackgroundColor:[UIColor whiteColor]];
     
-    self.window.rootViewController = [ViewController new];
+    //根视图
+    ViewController * rootView = [[ViewController alloc]init];
+    
+    //根控制器
+    UINavigationController * nav = [[UINavigationController alloc]initWithRootViewController:rootView];
+    
+    self.window.rootViewController = nav;
     
     [self.window makeKeyAndVisible];
     

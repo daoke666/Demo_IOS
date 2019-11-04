@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SecondViewController.h"
 
 @interface ViewController ()
 
@@ -62,17 +63,17 @@
     
 
     //页面跳转
-    //MyViewController *myViewController = [[MyViewController alloc] init];
-    //myViewController.view.backgroundColor = [UIColor blueColor];
+    SecondViewController *secondViewController = [[SecondViewController alloc] init];
+    secondViewController.view.backgroundColor = [UIColor blueColor];
     
     //导航控制器入栈的方式切换页面
-    //[self.navigationController pushViewController:myViewController animated:YES];
+    [self.navigationController pushViewController:secondViewController animated:YES];
     
     //模态切换的方式切换页面
-    //[self presentViewController:myViewController animated:YES completion:nil];
+    //[self presentViewController:secondViewController animated:YES completion:nil];
     
     //self.modalPresentationStyle = UIModalPresentationFullScreen;
-    //[self presentModalViewController:myViewController animated:YES];
+    //[self presentModalViewController:secondViewController animated:YES];
     
 
     /*

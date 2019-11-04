@@ -16,6 +16,8 @@
 		0791A45B236C1DDB008C347D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0791A45A236C1DDB008C347D /* main.m */; };
 		0791A465236C1DDB008C347D /* DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0791A464236C1DDB008C347D /* DemoTests.m */; };
 		0791A470236C1DDB008C347D /* DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0791A46F236C1DDB008C347D /* DemoUITests.m */; };
+		0791A47F236FBD31008C347D /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0791A47E236FBD31008C347D /* SecondViewController.m */; };
+		0791A482236FBD79008C347D /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0791A481236FBD79008C347D /* ThirdViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		0791A46B236C1DDB008C347D /* DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0791A46F236C1DDB008C347D /* DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoUITests.m; sourceTree = "<group>"; };
 		0791A471236C1DDB008C347D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0791A47D236FBD31008C347D /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		0791A47E236FBD31008C347D /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		0791A480236FBD79008C347D /* ThirdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		0791A481236FBD79008C347D /* ThirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,10 @@
 				0791A456236C1DDB008C347D /* LaunchScreen.storyboard */,
 				0791A459236C1DDB008C347D /* Info.plist */,
 				0791A45A236C1DDB008C347D /* main.m */,
+				0791A47D236FBD31008C347D /* SecondViewController.h */,
+				0791A47E236FBD31008C347D /* SecondViewController.m */,
+				0791A480236FBD79008C347D /* ThirdViewController.h */,
+				0791A481236FBD79008C347D /* ThirdViewController.m */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -267,7 +277,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0791A47F236FBD31008C347D /* SecondViewController.m in Sources */,
 				0791A450236C1DDA008C347D /* ViewController.m in Sources */,
+				0791A482236FBD79008C347D /* ThirdViewController.m in Sources */,
 				0791A44A236C1DDA008C347D /* AppDelegate.m in Sources */,
 				0791A45B236C1DDB008C347D /* main.m in Sources */,
 				0791A44D236C1DDA008C347D /* SceneDelegate.m in Sources */,
